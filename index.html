@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyTracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <div class='header_blur'>
+        </div>
+        <div class="header_wrapper">
+            <h2 class="balance">15.000 KZT</h1>
+                <p>Общая сумма</p>
+        </div>
+    </header>
+    <main>
+        <div class="main_container">
+
+            <section class="data">
+                <div class="block stonks">
+                    <h2>Доходы за месяц</h2>
+                    <p>+1.500 KZT</p>
+                    <button class="btn1" id="stonkBtn">Добавить запись</button>
+                </div>
+                <div class="block no_stonks">
+                    <h2>Расходы за месяц</h2>
+                    <p>-1.500 KZT</p>
+                    <button class="btn1" id="noStonkBtn">Добавить запись</button>
+                </div>
+            </section>
+
+            <section class="block accounts">
+                <h2>Ваши счета</h2>
+                <div class="accounts_list">
+                    <ul>
+                        <li>
+                            <p>Halyk:</p>
+                            <p>5.000 KZT</p>
+                        </li>
+                        <li>
+                            <p>Kaspi:</p>
+                            <p>5.000 KZT</p>
+                        </li>
+                        <li>
+                            <p>Наличные:</p>
+                            <p>5.000 KZT</p>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn1" onclick="openPopUpAccounts()">Добавить счет</button>
+            </section>
+            <section class="block accounts">
+                <h2>История</h2>
+                <ul class="accounts_list">
+                    <li>
+                        <p>Купил шоколадок</p>
+                        <p>-1.500 KZT</p>
+                    </li>
+                    <li>
+                        <p>Нашел в старой куртке</p>
+                        <p>+1.500 KZT</p>
+                    </li>
+                </ul>
+            </section>
+            <!-- <section class="info">
+                <p class="info-text">MoneyTracker - это веб-приложение для записи ваших трат и расходов</p>
+            </section> -->
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
